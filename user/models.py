@@ -45,10 +45,10 @@ def create_superuser(self, email, password, **extra_fields):
 
 
 class User(AbstractUser):
-   username = None
-   email = models.EmailField(_("email address"), unique=True)
+    username = None
+    email = models.EmailField(_("email address"), unique=True)
 
-   USERNAME_FIELD = "email"
-   REQUIRED_FIELDS = []
+    USERNAME_FIELD = "email"
+    REQUIRED_FIELDS = []
 
-   objects = UserManager()
+    objects = UserManager()
