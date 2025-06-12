@@ -57,7 +57,7 @@ class MovieDetailSerializer(MovieSerializer):
         model = Movie
         fields = (
             "id", "title", "description", "duration",
-            "genres", "actors","image"
+            "genres", "actors","image",
         )
 
 
